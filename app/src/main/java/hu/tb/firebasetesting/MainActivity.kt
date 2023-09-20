@@ -21,8 +21,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(mainViewModel: MainViewModel = viewModel()) {
+    mainViewModel.register()
     //mainViewModel.writeData()
-    mainViewModel.readData()
+    //mainViewModel.readData()
     Text(
         text = "Hello",
     )
